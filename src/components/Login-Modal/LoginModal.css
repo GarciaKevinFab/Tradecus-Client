@@ -1,0 +1,102 @@
+.modal__form {
+  padding: 50px;
+  background: var(--secondary-color);
+  position: relative;
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2); /* Agregamos una sombra */
+}
+
+.modal__form h2 {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.modal__form {
+  width: 40%;
+}
+
+.modal__form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Agregamos un borde suave */
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  
+}
+
+.close {
+  border: none; 
+  transition: opacity 0.3s ease; /* Agregamos una transición */
+}
+
+.close:hover {
+  opacity: 0.7; /* Agregamos un efecto de desvanecimiento al pasar el mouse */
+}
+
+.close span i{
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.modal__form input:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.1);  /* Actualizamos el color de la sombra al enfocar */
+}
+
+.modal__form p {
+  font-size: 0.9rem;
+  color: #000000;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.modal__form p a {
+  color: blue;
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Agregamos una transición */
+}
+
+.modal__form p a:hover {
+  color: darkblue; /* Cambiamos el color al pasar el mouse */
+}
+
+.password-container {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.input-container {
+  width: 80%;  
+  margin-bottom: 20px;  
+}
+
+@media only screen and (max-width: 768px) {
+  .modal__form {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .modal__form {
+    width: 100%;
+  }
+}

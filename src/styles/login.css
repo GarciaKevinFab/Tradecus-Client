@@ -1,0 +1,122 @@
+.login__img {
+  width: 60%;
+  text-align: center;
+}
+
+.login__img img {
+  width: 70%;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out; /* Agregamos un efecto de transición */
+}
+
+.login__img img:hover {
+  transform: scale(1.05); /* Agregamos un efecto de zoom al pasar el mouse */
+}
+
+.login__form {
+  padding: 50px;
+  background: var(--secondary-color);
+  position: relative;
+  border-radius: 1.5rem; /* Añadimos un borde redondeado */
+}
+
+.login__container {
+  box-shadow: rgba(17, 12, 46, 0.1) 0px 10px 30px 0px; /* Suavizamos la sombra */
+  margin-top: 100px;
+}
+
+.login__form .user {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -9%;
+  left: 50%;
+  transform: translate(-50%, -9%);
+}
+
+.login__form .user img {
+  width: 100%;
+}
+
+.login__form h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login__form {
+  width: 40%;
+}
+
+.login__form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Agregamos un borde suave */
+  font-size: 1rem;
+  color: var(--heading-color);
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Agregamos un efecto de transición */
+}
+
+.login__form input:focus {
+  outline: none;
+  border-color: var(--heading-color); /* Cambiamos el color del borde al enfocar */
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1); /* Agregamos una sombra al enfocar */
+}
+
+.auth__btn {
+  background: var(--heading-color) !important;
+  width: 100%;
+  color: #fff !important;
+  transition: background-color 0.3s ease; /* Agregamos un efecto de transición */
+}
+
+.auth__btn:hover {
+  background: darken(var(--heading-color), 10%) !important; /* Oscurecemos el botón al pasar el mouse */
+}
+
+.login__form p {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.login__form p a {
+  color: var(--heading-color);
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Agregamos un efecto de transición */
+}
+
+.login__form p a:hover {
+  color: darken(var(--heading-color), 10%); /* Oscurecemos el enlace al pasar el mouse */
+}
+
+@media only screen and (max-width: 768px) {
+  .login__img {
+    display: none;
+  }
+
+  .login__form {
+    width: 70%;
+    margin: auto;
+  }
+
+  .login__container {
+    padding-bottom: 3rem;
+    margin-top: 70px;
+    box-shadow: none; /* Eliminamos la sombra en pantallas pequeñas */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .login__form {
+    width: 100%;
+  }
+
+  .login__container {
+    padding-bottom: 1rem;
+  }
+}

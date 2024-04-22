@@ -1,0 +1,128 @@
+.contact {
+  padding: 5rem 0;
+  background-color: var(--background-color); 
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.contact__description,
+.contact__info-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.contact__form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact__form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact__form label {
+  display: block;
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: .5rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact__form textarea {
+  resize: vertical;
+}
+
+.contact__submit {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact__submit:hover {
+  background-color: #ff0000;
+}
+
+.contact__info {
+  padding-left: 2.5rem;
+  text-align: left;
+}
+
+.contact__details {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.contact__details li {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: .5rem;
+}
+
+.contact__social {
+  margin-top: 1.5rem;
+}
+
+.contact__social a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-right: .5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact__social a:hover {
+  color: var(--primary-color);
+}
+
+.contact__social button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact__social button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__title {
+      font-size: 2rem;
+  }
+
+  .contact__description,
+  .contact__info-text {
+      font-size: 1rem;
+  }
+
+  .contact__info {
+      padding-left: 1.25rem;
+  }
+
+  .contact__form .form-group {
+      margin-bottom: 1rem;
+  }
+}
